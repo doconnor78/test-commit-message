@@ -3,8 +3,8 @@ language: node_js
 node_js:
 - '6'
 
-script: 
+before_install:
   - echo $commit_message
   - if [[ $commit_message != *"trigger build"* ]]; 
-   then travis_terminate 0;
-   fi
+    then travis_terminate 0;
+    fi
