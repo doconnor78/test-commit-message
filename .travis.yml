@@ -5,6 +5,3 @@ node_js:
 
 before_install:
   - echo $commit_message
-  - if [[ $commit_message != *"trigger build"* ]]; 
-    then travis_terminate 0;
-    fi
