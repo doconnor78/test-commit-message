@@ -4,9 +4,6 @@ node_js:
 - '6'
 
 before_install:
-  - echo $TRAVIS_COMMIT
-  - echo $TRAVIS_TAG
-  - echo $TRAVIS_BRANCH
   - echo $TRAVIS_COMMIT_MESSAGE
 
 script: 
