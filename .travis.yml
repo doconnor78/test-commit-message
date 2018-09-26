@@ -2,4 +2,8 @@ language: node_js
 node_js:
 - '6'
 
-script: if [[ $TRAVIS_COMMIT_MESSAGE == *"trigger build"* ]]; then 0 ; 1 ;
+script: 
+- if [ $TRAVIS_COMMIT_MESSAGE == *"trigger build"* ]; 
+   then skip;
+   else travis_terminate 0;
+   fi
