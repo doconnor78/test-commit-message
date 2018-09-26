@@ -1,3 +1,4 @@
+conditions: v1
 language: node_js
 node_js:
 - '6'
@@ -7,6 +8,7 @@ before_install:
   - echo $TRAVIS_TAG
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_COMMIT_MESSAGE
+  - echo $commit_message
 
 script: 
   - echo $TRAVIS_COMMIT_MESSAGE
